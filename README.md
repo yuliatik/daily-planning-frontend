@@ -1,12 +1,81 @@
-# React + Vite
+📝 Daily Plan App – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple task management web application built with React.
 
-Currently, two official plugins are available:
+Users can add, edit, and delete daily tasks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This frontend communicates with a backend API hosted at Render.
 
-## Expanding the ESLint configuration
+DEMO
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+🚀 Features
+Add a new daily task
+
+Edit existing tasks
+
+Delete tasks
+
+Real-time UI updates
+
+Clean and minimalistic design
+
+🛠 Tech Stack
+React (with Hooks)
+
+Axios (for HTTP requests)
+
+React Icons
+
+CSS Modules
+
+📁 Project Structure
+bash
+Kopieren
+Bearbeiten
+src/
+├── App.css             # Styling for the app
+├── App.js              # Main component
+├── FetchTask.js        # Axios API calls (GET, POST)
+├── MyTask.js           # Task card component with edit/delete icons
+⚙️ Installation & Usage
+1. Clone the repository:
+bash
+Kopieren
+Bearbeiten
+git clone https://github.com/your-username/daily-plan-frontend.git
+cd daily-plan-frontend
+2. Install dependencies:
+bash
+Kopieren
+Bearbeiten
+npm install
+3. Start the development server:
+bash
+Kopieren
+Bearbeiten
+npm start
+The app will run at http://localhost:3000
+
+🌐 Backend API Endpoints Used
+Make sure your backend (Node.js + Express) is running or deployed at:
+
+bash
+Kopieren
+Bearbeiten
+https://daily-planning-waeo.onrender.com
+Endpoints:
+
+GET / – Get all tasks
+
+POST /saveDay – Add a task
+
+POST /editDay – Edit a task
+
+POST /deleteDay – Delete a task (Note: points to http://localhost:4000, make sure it's updated if deployed)
+
+📸 UI Preview
+
+(Optional: insert screenshot of app interface)
