@@ -27,7 +27,7 @@ const editDay = (taskId, name, setName, setMyTask, setEditing) => {
 }
 
 const deleteDay = (_id, setMyTask) => {
-    axios.post('http://localhost:4000/deleteDay', {_id})
+    axios.post('https://daily-planning-waeo.onrender.com/deleteDay', {_id})
     .then((data) => {
         console.log(data)
         getAllTask(setMyTask)
